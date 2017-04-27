@@ -1,7 +1,7 @@
 {
     "name": "pwm/sfw-request",
     "type": "library",
-    "description": "Simple Request class for JSON APIs",
+    "description": "Simple Request for JSON APIs",
     "license": "MIT",
     "require": {
         "php": ">=7.1.0"
