@@ -2,7 +2,7 @@
     "name": "pwm/sfw-request",
     "description": "Simple Request for JSON APIs",
     "type": "library",
-    "keywords": [],
+    "keywords": ["sfw", "http-request"],
     "homepage": "https://github.com/pwm/sfw-request",
     "license": "MIT",
     "authors": [
