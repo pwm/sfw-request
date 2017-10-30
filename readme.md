@@ -1,5 +1,7 @@
 # SFW Request
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A simple Request object for JSON APIs.
 
 ## Requirements
@@ -31,3 +33,17 @@ $uri = $request->getUri();
 $query = $request->getQuery();
 $json = $request->getJson();
 ```
+
+## How it works
+
+TBD
+
+## Tests
+
+	$ vendor/bin/phpunit
+	$ composer phpcs
+	$ composer phpstan
+
+## Changelog
+
+[Click here](changelog.md)
