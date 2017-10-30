@@ -1,23 +1,20 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace SFW\Request;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * @group request
- */
 class RequestJsonTest extends TestCase
 {
     /**
      * @test
      */
-    public function itCreatesFromValidJsonStrings(): void
+    public function it_creates_from_valid_json_strings(): void
     {
         //@todo: fix null
         //static::assertSame([], (new RequestJson(''))->getData());
-        static::assertSame(['foo' => 'bar'], (new RequestJson('{"foo": "bar"}'))->getData());
+        self::assertSame(['foo' => 'bar'], (new RequestJson('{"foo": "bar"}'))->getData());
     }
 
     /**
@@ -25,7 +22,7 @@ class RequestJsonTest extends TestCase
      * @expectedException \InvalidArgumentException
      * @expectedExceptionMessageRegExp 'Cannot parse json: .*'
      */
-    public function itThrowsIfJsonStringIsInvalid(): void
+    public function it_throws_if_json_string_is_invalid(): void
     {
         new RequestJson('{"foo":}');
     }

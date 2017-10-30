@@ -1,22 +1,19 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace SFW\Request;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * @group request
- */
 class RequestMethodTest extends TestCase
 {
     /**
      * @test
      */
-    public function itCreatesFromValidMethods(): void
+    public function it_creates_from_valid_methods(): void
     {
         array_map(function ($method) {
-            static::assertSame($method, (new RequestMethod($method))->getData());
+            self::assertSame($method, (new RequestMethod($method))->getData());
         }, RequestMethod::VALID_METHODS);
     }
 
@@ -25,7 +22,7 @@ class RequestMethodTest extends TestCase
      * @expectedException \InvalidArgumentException
      * @expectedExceptionMessageRegExp 'Method foobar is not part of valid methods: .*'
      */
-    public function itThrowsIfMethodsIsInvalid(): void
+    public function it_throws_if_methods_is_invalid(): void
     {
         new RequestMethod('foobar');
     }
