@@ -1,7 +1,3 @@
-env:
-  global:
-    - CC_TEST_REPORTER_ID=81f59b077b03d95a480c9fb1a7a6000d9ee48545f997d11908cdc225350c9ff0
-
 sudo: false
 
 language: php
