@@ -7,6 +7,15 @@
 
 A simple Request object for JSON APIs.
 
+## Table of Contents
+
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+* [How it works](#how-it-works)
+* [Tests](#tests)
+* [Changelog](#changelog)
+
 ## Requirements
 
 PHP 7.1+
