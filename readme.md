@@ -15,6 +15,7 @@ A simple Request object for JSON APIs.
 * [How it works](#how-it-works)
 * [Tests](#tests)
 * [Changelog](#changelog)
+* [Licence](#licence)
 
 ## Requirements
 
@@ -59,3 +60,7 @@ TBD
 ## Changelog
 
 [Click here](changelog.md)
+
+## Licence
+
+[MIT](LICENSE)
