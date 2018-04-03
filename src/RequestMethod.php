@@ -7,11 +7,13 @@ use InvalidArgumentException;
 
 class RequestMethod
 {
-    public const GET    = 'GET';
-    public const POST   = 'POST';
-    public const PUT    = 'PUT';
-    public const PATCH  = 'PATCH';
-    public const DELETE = 'DELETE';
+    public const GET     = 'GET';
+    public const POST    = 'POST';
+    public const PUT     = 'PUT';
+    public const PATCH   = 'PATCH';
+    public const DELETE  = 'DELETE';
+    public const HEAD    = 'HEAD';
+    public const OPTIONS = 'OPTIONS';
 
     public const VALID_METHODS = [
         self::GET,
@@ -19,6 +21,8 @@ class RequestMethod
         self::PUT,
         self::PATCH,
         self::DELETE,
+        self::HEAD,
+        self::OPTIONS,
     ];
 
     /** @var string */
